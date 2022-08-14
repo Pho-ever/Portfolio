@@ -20,15 +20,20 @@ li {
 }
 
 .landing-container {
-  border: 1px solid red;
   display: grid;
+  grid-gap: 2rem;
   grid-template-columns: 6fr 6fr;
-  padding: 2rem;
+  padding: 2rem 2rem 0;
+}
+.info-container p{
+  width: 70%;
+  /* border: 2px solid blue; */
 }
 
-.landing-container h3 {
+.info-container h3 {
   font-size: 3rem;
   font-family: 'Aboreto', cursive;
+  margin-bottom: 1rem;
 }
 
 .details {
@@ -37,11 +42,35 @@ li {
 }
 
 .details a {
-  padding: 0.5rem 0;
+  padding: 0.8rem 0;
   margin-left: 5rem;
   text-decoration: none;
   color: black;
   font-size: 1rem;
+}
+
+.details a:hover {
+  transform: translate(5px);
+}
+
+.landing-children {
+  height: 75vh;
+  border: 2px solid red;
+  border-radius: 10px;
+  width: 85%;
+  overflow-y: scroll;
+  padding: 15px;
+
+}
+
+.landing-children::-webkit-scrollbar {
+  display: none;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 footer {

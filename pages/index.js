@@ -1,11 +1,12 @@
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
+import Resume from './resume'
 
 export default function Home() {
   return (
     <>
       <div className="landing-container">
-        <div>
+        <div className="info-container">
           <h3>Hello! <br /> I'm Forever Oluwayomi</h3>
           <p>
             I'm a front-end developer,
@@ -26,9 +27,9 @@ export default function Home() {
           </div>
 
         </div>
-        <div>
+        <div className="landing-children">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim nam, architecto deleniti asperiores ipsa nisi. Id deleniti odit sint obcaecati, nihil maxime doloremque, quaerat odio, reprehenderit iure assumenda provident expedita?
+            <Resume />
           </p>
         </div>
       </div>
