@@ -21,6 +21,27 @@ li {
 
 .landing-container {
   border: 1px solid red;
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+  padding: 2rem;
+}
+
+.landing-container h3 {
+  font-size: 3rem;
+  font-family: 'Aboreto', cursive;
+}
+
+.details {
+  margin: 3rem 0;
+  display: grid;
+}
+
+.details a {
+  padding: 0.5rem 0;
+  margin-left: 5rem;
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
 }
 
 footer {
@@ -34,5 +55,4 @@ footer {
   bottom: 0;
   width: 100%;
   margin: 0 auto;
-
 }
