@@ -10,32 +10,14 @@ export default function Home() {
           <h3>Hello! <br /> I'm Forever Oluwayomi</h3>
           <p>
             I'm a front-end developer,
-            I write reusable ReactJS and NextJs code and build responsive web applications with a mobile-first approach
+            I write reusable ReactJS and NextJs code and build responsive web applications with a mobile-first approach. I also have experinece working and cooperating with teams made up of diverse spectrum of individuals.
           </p>
-
           <div className="details">
-            <Link href="/">
-              <a>Resume</a>
-            </Link>
-            <Link href="/">
-              <a>Project</a>
-            </Link>
-            <Link href="/">
-              <a>Contact</a>
-            </Link>
-
+            Here is my <a> resume</a> and a few <a>projects</a> i have worked on
           </div>
-
-        </div>
-        <div className="landing-children">
-          <p>
-            <Resume />
-          </p>
         </div>
       </div>
-      <footer>
-        Oluwayomi Forever
-      </footer>
+
     </>
   )
 }
