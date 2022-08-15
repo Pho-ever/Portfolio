@@ -20,10 +20,13 @@ li {
 }
 
 .landing-container {
-  padding: 2rem 2rem 0;
+  padding: 2rem 5rem 0;
+  display: flex;
+  text-align: left;
 }
-.info-container p{
-  width: 70%;
+
+.info-container {
+  width: 60%;
 }
 
 .info-container h3 {
@@ -34,13 +37,16 @@ li {
 
 .details {
   margin: 0.5rem 0;
-  display: flex;
 }
 
 .details a {
-  text-decoration: underline;
   font-weight: 500;
   padding: 0 7px;
+  color: black;
+}
+
+.details p {
+  padding-bottom: 0.5rem;
 }
 
 .landing-children {
@@ -82,18 +88,15 @@ li {
 .profile-section {
   font-size: 0.79rem;
   margin-bottom: 0.5rem;
-
 }
 
-footer {
-  font-family: 'Aboreto', cursive;
-  font-weight: 700;
-  font-size: 5rem;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  margin: 0 auto;
+.description {
+  padding-left: 1rem;
+  padding-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .info-container {
+    width: 100%;
+  }
 }
