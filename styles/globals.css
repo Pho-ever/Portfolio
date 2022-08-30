@@ -24,6 +24,19 @@ a {
   text-decoration: none;
 }
 
+.active-tab {
+  font-weight: 800;
+  color: red !important;
+}
+
+.active {
+  display: flex;
+}
+
+.disabled {
+  display: none;
+}
+
 .landing-container {
   padding: 2rem 2rem 0;
   display: grid;
@@ -177,6 +190,7 @@ a {
   overflow-Y: scroll;
   overflow-X: hidden;
 }
+
 
 .resume .resume-header {
   display: grid;
