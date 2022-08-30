@@ -213,6 +213,9 @@ a {
   padding-left: 15px;
 }
 
+.skills p {
+  padding-bottom: 0.3rem;
+}
 .section .section-title {
   width: 100%;
   background-color: rgba(190, 188, 188, 0.664);
@@ -231,8 +234,15 @@ a {
   grid-template-columns: 6fr 6fr;
 }
 
+.bold-text {
+  font-weight: 600;
+}
+
 .experince-title {
   font-weight: bold;
+  font-size: 0.85rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 .experince-title a {

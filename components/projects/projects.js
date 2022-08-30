@@ -3,7 +3,6 @@ import Link from 'next/link'
 
 
 export default function Projects() {
-
     return (
         <div className="projects">
             <h3 className="project-header">PROJECTS</h3>

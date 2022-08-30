@@ -17,27 +17,40 @@ export default function Resume() {
             </div>
             <div className="section">
                 <p className="section-title">SKILLS</p>
-                <div className="section-body grid">
-                    <p>HTML</p>
-                    <p>HTML</p>
-                    <p>HTML</p>
-                    <p>HTML</p>
-                    <p>HTML</p>
+                <div className="section-body">
+                    <div className="skills">
+                        {constant.skills.map((skill, idx) => (
+                            <p key={`skill-${idx}`} >
+                                <span className="bold-text">{skill.title}: </span>{' '}
+                                {skill.body}
+                            </p>
+                        ))}
+                    </div>
                 </div>
             </div>
             <div className="section">
                 <p className="section-title">EXPERIENCE</p>
                 <div className="section-body experience">
-                    <div className="experince-title">INTERN - Frontend Developer, <Link href="/"><a>Codematic Technology</a></Link>
-                    </div>
-                    <div>
-                        <p>- Implemented landing pages and websites from conception to deployment while optimizing and maintaining them.</p>
-                        <p> - Standardized all output using a fresh, mobile-first strategy and responsive methodology </p>
-                        <p> - Teamed up with the product team to put new feature advancements into practice while maintaining branding guidelines. </p>
-                        <p> - Kept track of user stories during daily stand-ups and retrospectives.</p>
-                        <p> - Front-end technical solutions were implemented to satisfy product specifications for building new websites.</p>
-                        <p> - Received design requirements, peer programs, and test applications while working in an agile, collaborative setting. </p>
-                        <p> - Received mentoring from experienced developers and consistently implemented their advice.</p>
+
+                    <div className="exp_container">
+                        {constant.workExperiences.map((experience, idx) => (
+                            <section className="experience" key={idx}>
+                                <p className="experince-title">
+                                    {experience.company} - {experience.role}
+                                    <span>
+                                        {experience.startDate} - {experience.endDate ? experience.endDate : 'CURRENT'}
+                                    </span>
+                                </p>
+                                <article className="description">
+                                    {experience.achievements.map((achievement, i) => (
+                                        <p key={`achievement-${i}`}>
+                                            {/* <span>&#8594;</span> */}
+                                            {achievement}
+                                        </p>
+                                    ))}
+                                </article>
+                            </section>
+                        ))}
                     </div>
                 </div>
             </div>
