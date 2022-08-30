@@ -33,11 +33,12 @@ a {
 
 .info-container > h3 {
   font-size: 3rem;
-  font-family: 'Aboreto', cursive;
+  /* font-family: 'Aboreto', cursive; */
   margin-bottom: 1rem;
 }
 
 .details {
+  padding-top: 5rem;
   margin: 0.5rem 0;
 }
 
@@ -122,6 +123,11 @@ a {
 }
 
 @media (max-width: 768px) {
+
+  .details {
+    padding: 0;
+  }
+
   .info-container > h3 {
     font-size: 2.3rem;
     text-align: center;
