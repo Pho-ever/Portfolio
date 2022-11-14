@@ -1,6 +1,7 @@
 import { constant } from "../constant/constant"
 import Link from 'next/link'
 
+
 export default function Resume() {
     return (
         <div className="resume">
@@ -11,6 +12,7 @@ export default function Resume() {
                     <Link href="/"><a>{constant.phone}</a></Link>
                 </div>
             </div>
+
             <div className="section">
                 <p className="section-title">PROFILE</p>
                 <p className="section-body">{constant.profile}</p>
@@ -28,11 +30,12 @@ export default function Resume() {
                     </div>
                 </div>
             </div>
+
+
             <div className="section">
                 <p className="section-title">EXPERIENCE</p>
                 <div className="section-body experience">
-
-                    <div className="exp_container">
+                    <div className="exp-container">
                         {constant.workExperiences.map((experience, idx) => (
                             <section className="experience" key={idx}>
                                 <p className="experince-title">
@@ -43,10 +46,15 @@ export default function Resume() {
                                 </p>
                                 <article className="description">
                                     {experience.achievements.map((achievement, i) => (
-                                        <p key={`achievement-${i}`}>
-                                            {/* <span>&#8594;</span> */}
-                                            {achievement}
-                                        </p>
+                                        <div 
+                                        key={`achievement-${i}`}
+                                        className="description-item"
+                                        >
+                                            <div> → </div>
+                                            <p>
+                                                {achievement}
+                                            </p>
+                                        </div>
                                     ))}
                                 </article>
                             </section>
@@ -54,6 +62,8 @@ export default function Resume() {
                     </div>
                 </div>
             </div>
+
+
         </div>
     )
 

@@ -7,10 +7,15 @@ import Resume from '../components/resume/resume'
 import Sideprojects from '../components/sideprojects/sideprojects'
 
 export default function Home() {
-  const [toggleTab, setToggleTab] = useState(1)
+  const [toggleTab, setToggleTab] = useState(0)
+  const [toggleSideTab, setToggleSideTab] = useState(0)
 
   const handleToggleTab = (index) => {
     setToggleTab(index)
+  }
+    
+  const handleButton = (index) => {
+    
   }
   return (
     <>
@@ -20,29 +25,28 @@ export default function Home() {
           <p>{constant.intro}</p>
           <div className="details">
 
-            <p>-----<Link href="/"><a onClick={() => handleToggleTab(1)}
-              className={toggleTab === 1 ? "active-tab" : "tab"}>Resume</a></Link></p>
+            <p>-----<Link href="/"><a onClick={() => handleToggleTab(0)}
+              className={toggleTab === 0 ? "active-tab" : "tab"}>Resume</a></Link></p>
 
-            <p>------<Link href="/" ><a onClick={() => handleToggleTab(2)}
-              className={toggleTab === 2 ? "active-tab" : "tab"}
+            <p>------<Link href="/" ><a onClick={() => handleToggleTab(1)}
+              className={toggleTab === 1 ? "active-tab" : "tab"}
             >Projects</a></Link></p>
 
-            <p>--------<Link href="/" ><a onClick={() => handleToggleTab(3)}
-              className={toggleTab === 3 ? "active-tab" : "tab"}
+            <p>--------<Link href="/" ><a onClick={() => handleToggleTab(2)}
+              className={toggleTab === 2 ? "active-tab" : "tab"}
             >Side projects</a></Link></p>
 
-            {/* <p><Link href="/" ><a onClick={() => handleToggleTab(3)}
-              className={toggleTab === 4 ? "active-tab" : "tab"}
-            >Contact</a></Link></p> */}
           </div>
         </div>
 
-        <div className={toggleTab === 1 ? "active" : "disabled"}><Resume /></div>
-        <div className={toggleTab === 2 ? "active" : "disabled"}><Projects /></div>
-        <div className={toggleTab === 3 ? "active" : "disabled"}><Sideprojects /></div>
-        {/* <div className={toggleTab === 4 ? "active" : "disabled"}><Sideprojects /></div> */}
+        <div className={toggleTab === 0 ? "active" : "disabled"}><Resume /></div>
+        <div className={toggleTab === 1 ? "active" : "disabled"}><Projects /></div>
+        <div className={toggleTab === 2 ? "active" : "disabled"}><Sideprojects /></div>
 
-
+        <div className="buttons">
+          <button>hey</button>
+          <button>hey</button>
+        </div>
       </div>
 
     </>
