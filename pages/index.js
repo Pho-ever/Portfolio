@@ -48,7 +48,6 @@ export default function Home() {
           <button>hey</button>
         </div>
       </div>
-
     </>
   )
 }
