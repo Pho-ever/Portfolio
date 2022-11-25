@@ -6,6 +6,7 @@ import Projects from '../components/projects/projects'
 import Resume from '../components/resume/resume'
 import Sideprojects from '../components/sideprojects/sideprojects'
 
+
 export default function Home() {
   const [toggleTab, setToggleTab] = useState(0)
   const [toggleSideTab, setToggleSideTab] = useState(0)
@@ -13,10 +14,12 @@ export default function Home() {
   const handleToggleTab = (index) => {
     setToggleTab(index)
   }
-    
+
   const handleButton = (index) => {
     
   }
+
+
   return (
     <>
       <div className="landing-container">

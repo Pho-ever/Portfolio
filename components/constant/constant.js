@@ -1,8 +1,6 @@
 const name = 'Oluwayomi Forever';
 
-const email = "oluwayomiforever@gmail.com"
-
-const phone = "+2347053258406"
+const profession = "Frontend Developer"
 
 const title = 'Frontend Developer'
 
@@ -17,16 +15,16 @@ const skills = [
     },
     {
         title: "Framework/Libaries",
-        body: "ReactJS, NextJS, Boostrap, Npm, MaterialUI"
+        body: "ReactJS, NextJS, Boostrap,  MaterialUI"
     },
     {
         title: "Tooling",
-        body: "Git"
+        body: "Git, Npm"
     },
-    {
-        title: "Soft skills",
-        body: "Googling, Teamwork, Integrity, Open-mindedness, Willingness to ask questions"
-    }
+    // {
+    //     title: "Soft skills",
+    //     body: "Googling, Teamwork, Integrity, Open-mindedness, Willingness to ask questions"
+    // }
 ]
 
 const workExperiences = [
@@ -59,18 +57,25 @@ const workExperiences = [
     },
 ]
 
+const education = [
+    {
+        school: "B.Sc Building at Obafemi Awolowo University, Ile-Ife",
+        year: "SEP 2018 - CURRENT"
+    }
+]
+
 
 
 
 export const constant = {
     name,
     intro,
-    email,
-    phone,
+    profession,
     title,
     profile,
     skills,
     workExperiences,
+    education,
     // certifications,
     // languages,
     // hobbies,

@@ -1,15 +1,23 @@
 import { constant } from "../constant/constant"
 import Link from 'next/link'
+import Image from 'next/image';
 
 
 export default function Resume() {
     return (
         <div className="resume">
             <div className="resume-header">
-                <h3>{constant.name}</h3>
+                <div className="resume-name">
+                    <h3>{constant.name}</h3>
+                        <div >
+                            <Image src='/download.png' width="20%" height="20%"/>
+                            <Link href="https://drive.google.com/file/d/1_McYUjpr3eAvyvOTdEPcHWc4cH28Kd7_/view?usp=share_link">
+                                <a target="_blank">Download</a>
+                            </Link>
+                        </div>
+                </div>
                 <div className="resume-contacts">
-                    <Link href="/"><a>{constant.email}</a></Link>
-                    <Link href="/"><a>{constant.phone}</a></Link>
+                    <p>{constant.profession}</p>
                 </div>
             </div>
 
@@ -39,10 +47,12 @@ export default function Resume() {
                         {constant.workExperiences.map((experience, idx) => (
                             <section className="experience" key={idx}>
                                 <p className="experince-title">
+                                    <p>
                                     {experience.company} - {experience.role}
-                                    <span>
-                                        {experience.startDate} - {experience.endDate ? experience.endDate : 'CURRENT'}
-                                    </span>
+                                    </p>
+                                    <p>
+                                        {experience.startDate} - {experience.endDate ? experience.endDate : 'Current'}
+                                    </p>
                                 </p>
                                 <article className="description">
                                     {experience.achievements.map((achievement, i) => (
@@ -58,6 +68,21 @@ export default function Resume() {
                                     ))}
                                 </article>
                             </section>
+                        ))}
+                    </div>
+                </div>
+            </div>
+
+
+            <div className="section">
+                <p className="section-title"> EDUCATION </p>
+                <div className="section-body">
+                    <div>
+                        {constant.education.map((edu, idx) => (
+                            <div className="education">
+                                <p>{edu.school}</p>
+                                <p>{edu.year}</p>
+                            </div>
                         ))}
                     </div>
                 </div>
