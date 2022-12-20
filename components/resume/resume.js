@@ -9,10 +9,14 @@ export default function Resume() {
             <div className="resume-header">
                 <div className="resume-name">
                     <h3>{constant.name}</h3>
-                        <div >
-                            <Image src='/download.png' width="20%" height="20%"/>
+                        <div>
                             <Link href="https://drive.google.com/file/d/1_McYUjpr3eAvyvOTdEPcHWc4cH28Kd7_/view?usp=share_link">
-                                <a target="_blank">Download</a>
+                                <a target="_blank">
+                                    <Image src='/download.png' width="20%" height="20%"/>
+                                </a>
+                            </Link>
+                            <Link href="https://drive.google.com/file/d/1_McYUjpr3eAvyvOTdEPcHWc4cH28Kd7_/view?usp=share_link">
+                                <a target="_blank" className="download" >Download</a>
                             </Link>
                         </div>
                 </div>
@@ -79,7 +83,8 @@ export default function Resume() {
                 <div className="section-body">
                     <div>
                         {constant.education.map((edu, idx) => (
-                            <div className="education">
+                            <div className="education"
+                                    key={idx}>
                                 <p>{edu.school}</p>
                                 <p>{edu.year}</p>
                             </div>

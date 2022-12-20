@@ -24,6 +24,7 @@ a {
   text-decoration: none;
 }
 
+
 .active-tab {
   font-weight: 800;
   font-size: 1.1rem;
@@ -32,9 +33,6 @@ a {
   padding-left: 2rem !important;
 }
 
-.active {
-  display: flex;
-}
 
 .disabled {
   display: none;
@@ -67,7 +65,7 @@ a {
 .details a {
   font-weight: 500;
   padding: 0 7px;
-  color: black;
+  color: rgb(65, 65, 65);
 }
 
 .details p {
@@ -114,20 +112,6 @@ a {
   margin-bottom: 0.5rem;
 }
 
-.projects {
-  background-color: rgba(190, 188, 188, 0.377);
-  border-radius: 10px;
-  padding: 20px;
-  height: 85vh;
-  overflow-Y: scroll;
-}
-
-
-.project-header{
-  font-size: 1rem;
-  font-family: 'Aboreto', cursive;
-  text-align: center;
-}
 
 .title {
   padding-bottom: 0.5rem;
@@ -157,6 +141,14 @@ a {
 }
 
 .buttons {
+  display: none;
+}
+
+.header-wrapper {
+  display: none;
+}
+
+.dropdown-menu {
   display: none;
 }
 
@@ -203,15 +195,96 @@ a {
     grid-template-columns: 12fr;
   }
 
-  .projects {
-    height: 95%;
-    overflow: hidden;
-  }
-
   .description {
     padding: 0 0 1rem 0;
     font-size: 0.85rem;
   }
+
+  .info-container {
+    display: none;
+  }
+
+  .header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    height: 2rem;
+  }
+
+  .header-wrapper .menu-btn-active {
+    border: none;
+    background-color: transparent;
+    width: 40px;
+    display: grid;
+    padding: 5px
+  }
+
+  .header-wrapper .menu-btn-active .btn-line-1 {
+      -webkit-transform: rotate(45deg) translateY(7px);
+      transform: rotate(45deg) translateY(7px);
+      position: relative;
+      top: 1px;
+      transition: -webkit-transform .2s linear;
+      transition: transform .2s linear;
+      transition: transform .2s linear,-webkit-transform .2s linear;
+      height: 2px;
+      background-color: black;
+      width: 100%;
+      margin: 4px 0;
+  }
+
+  .header-wrapper .menu-btn-active .btn-line-2 {
+      -webkit-transform: rotate(45deg) translateY(7px);
+      transform: rotate(-45deg) translateY(-7px);
+      position: relative;
+      top: 1px;
+      transition: -webkit-transform .2s linear;
+      transition: transform .2s linear;
+      transition: transform .2s linear,-webkit-transform .2s linear;
+      height: 2px;
+      background-color: black;
+      width: 100%;
+      margin: 4px 0;
+  }
+
+
+  .header-wrapper .menu-btn {
+    border: none;
+    background-color: transparent;
+    width: 50px;
+    display: grid;
+    padding: 5px;
+  }
+
+  .header-wrapper .menu-btn .btn-line-1{
+      height: 2px;
+      background-color: black;
+      width: 70%;
+      margin: 4px 0;
+      margin-left: auto;
+  }
+
+  .header-wrapper .menu-btn .btn-line-2{
+      height: 2px;
+      background-color: black;
+      width: 100%;
+      margin: 4px 0;
+  }
+
+  .dropdown-menu-active {
+    transition: all .3s ease-in-out;
+    border: 2px solid red;
+    margin: 0 auto;
+  }
+
+  .dropdown-menu-active p {
+    padding-bottom: 1.5rem;
+  }
+
+  .display-none {
+    display: none;
+  }
+
+
 }
 
 @media (max-width: 559px) {
@@ -225,6 +298,10 @@ a {
 
   .info-container > h3 {
     font-size: 1.5rem;
+  }
+
+  .download {
+    display: none;
   }
 }
 
@@ -304,11 +381,11 @@ a {
 }
 
 .bold-text {
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .experince-title {
-  font-weight: 500;
+  font-weight: 700;
   font-size: 0.9rem;
   display: grid;
   grid-template-columns: 8fr 4fr;
@@ -333,7 +410,149 @@ a {
 }
 
 .section-body .education p:nth-of-type(1) {
+  font-weight: 700;
+}
+
+/* =========================
+============================
+============================
+  PROJECTS
+==========================
+==========================
+==========================
+*/
+
+.project-container {
+  display: grid;
+  grid-gap: 1fr;
+  grid-template-columns: 6fr 6fr;
+}
+
+.projects {
+  border-radius: 10px;
+  padding: 10px;
+  height: 85vh;
+  overflow-Y: scroll;
+  width: 100%;
+}
+
+.projects::-webkit-scrollbar {
+  display: none;
+}
+
+.project-header{
+  font-size: 1rem;
+  font-family: 'Aboreto', cursive;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+
+.projects .project-container {
+  display: grid;
+  grid-gap: 5px;
+  padding: 1rem;
+}
+
+.project-container .projects-box {
+  height: 10rem;
+  background-color: rgba(190, 188, 188, 0.377);
+  padding: 15px;
+  transition: width .5s, height .5s, background-color .5s, transform .5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 15px;
+}
+
+
+.project-container .projects-box:hover {
+  transform: scale(1.2);
+  z-index: 10;
+  border: 2px solid black;
+  background-color: rgba(190, 188, 188, 0.842);
+}
+
+.projects-box .title {
+  padding: 0;
   font-weight: 600;
+  font-size: 1rem;
+}
+
+.projects-box .subtitle,
+.projects-box .frameworks {
+  font-size: 0.8rem;
+}
+
+.projects-box .more-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  padding-top: 10px;
+}
+
+.projects-box .more-details a{
+  align-items: center;
+  display: flex;
+}
+
+
+.projects-box .more-details a:hover {
+  font-weight: 700;
+}
+
+/* =========================
+============================
+============================
+  CONTACTS
+==========================
+==========================
+==========================
+*/
+
+.form {
+  display: grid;
+  padding: 2rem;
+}
+
+.input-container {
+  width: 100%;
+  display: grid;
+  margin-bottom: 2rem;
+}
+
+.input-container label {
+  padding-bottom: 10px;
+  font-weight: 600;
+}
+
+.input-container input {
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 0.85rem;
+  border-radius: 5px;
+  border: 1px solid black;
+  outline: 0;
+}
+
+.input-container textarea {
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 1rem;
+  height: 10rem;
+  resize: none;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.form button {
+  width: 100%;
+  padding: 10px;
+  font-weight: 600;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: rgba(190, 188, 188, 0.377);
 }
 
 
@@ -349,6 +568,7 @@ a {
   .resume .resume-header h3 {
     font-size: 2rem;
   }
+
 }
 
 @media (max-width: 768px) {
@@ -371,7 +591,7 @@ a {
 @media (max-width: 499px) {
   
   .landing-container{
-    padding: 0 1rem;
+    padding: 1.5rem;
   }
 }
 

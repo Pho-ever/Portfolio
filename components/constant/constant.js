@@ -4,7 +4,7 @@ const profession = "Frontend Developer"
 
 const title = 'Frontend Developer'
 
-const intro = "I am a Frontend Developer. I love to implement and build reuseable design interfaces using code"
+const intro = "I am a Frontend Developer. I build reuseable user interfaces and i have a passion for problem-solving, strong foundation and understanding of frontend principles and proven track record of delivering high-quality and scalable code."
 
 const profile = "Highly motivated front-end developer with background working effectively in dynamic enviroment and experience writing clean code, implementing and building responsive software and web applications using React while also applying agile methodologies. Proud team player with good communication skills, a solid understanding of Agile techniques and its approach. Proficient in developing fast loading user interfaces. "
 
@@ -64,6 +64,57 @@ const education = [
     }
 ]
 
+const projects = [
+    {
+        title: "Pura-vida",
+        subtitle: "A platform to view and book Beach-House and Short-let Apartments",
+        frameworks: "NextJS + Typescript + SwiperJS + Redux",
+        live: "www.pura-vida.web.app"
+    },
+    {
+        title: "Phorever.dev",
+        subtitle: "My Portfolio Website",
+        frameworks: "NextJS + CSS module",
+        live: "#"
+    },
+    {
+        title: "Phorever.dev",
+        subtitle: "My Portfolio Website",
+        frameworks: "NextJS + CSS module",
+        live: "#"
+    },
+    {
+        title: "Phorever.dev",
+        subtitle: "My Portfolio Website",
+        frameworks: "NextJS + CSS module",
+        live: "#"
+    },
+    {
+        title: "Phorever.dev",
+        subtitle: "My Portfolio Website",
+        frameworks: "NextJS + CSS module",
+        live: "#"
+    },
+    {
+        title: "Phorever.dev",
+        subtitle: "My Portfolio Website",
+        frameworks: "NextJS + CSS module",
+        live: "#"
+    },
+    {
+        title: "Phorever.dev",
+        subtitle: "My Portfolio Website",
+        frameworks: "NextJS + CSS module",
+        live: "#"
+    },
+    {
+        title: "Phorever.dev",
+        subtitle: "My Portfolio Website",
+        frameworks: "NextJS + CSS module",
+        live: "#"
+    },
+]
+
 
 
 
@@ -76,7 +127,7 @@ export const constant = {
     skills,
     workExperiences,
     education,
-    // certifications,
+    projects,
     // languages,
     // hobbies,
 };
