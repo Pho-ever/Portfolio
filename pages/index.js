@@ -6,6 +6,7 @@ import Projects from '../components/projects/projects'
 import Resume from '../components/resume/resume'
 import Sideprojects from '../components/sideprojects/sideprojects'
 import Contact from '../components/contact/contact'
+import Intro from '../components/intro/intro'
 
 
 export default function Home() {
@@ -38,8 +39,8 @@ export default function Home() {
         <div className="info-container">
           <h3>Hello! <br /> I'm {constant.name}</h3>
           <p>{constant.intro}</p>
-          <div className="details">
 
+          <div className="details">
             <p>-----<Link href="/"><a onClick={() => handleToggleTab(0)}
               className={toggleTab === 0 ? "active-tab" : "tab"}>Resume</a></Link></p>
 
@@ -66,6 +67,12 @@ export default function Home() {
         </div>
 
         <div className={menu ? "dropdown-menu-active" : "dropdown-menu"}>
+
+        <p><Link href="/"><a 
+        onClick={ () => handleToggleTab(3)}
+              // className={toggleTab === 0 ? "active-drop" : "tab"}
+              >Home</a></Link>
+          </p>
           
           <p><Link href="/"><a onClick={ () => handleToggleTab(0)}
               // className={toggleTab === 0 ? "active-drop" : "tab"}
@@ -77,7 +84,6 @@ export default function Home() {
             >Projects</a></Link>
             </p>
 
-
             <p><Link href="/" ><a onClick={() => handleToggleTab(2)}
               // className={toggleTab === 2 ? "active-tab" : "tab"}
             >Contact</a></Link></p>
@@ -88,6 +94,7 @@ export default function Home() {
           <div className={toggleTab === 0 ? "active" : "disabled"}><Resume /></div>
           <div className={toggleTab === 1 ? "active" : "disabled"}><Projects /></div>
           <div className={toggleTab === 2 ? "active" : "disabled"}><Contact /></div>
+          <div className={toggleTab === 3 ? "active" : "disabled"}><Intro /></div>
         </div>
 
 

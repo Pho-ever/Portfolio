@@ -272,12 +272,11 @@ a {
 
   .dropdown-menu-active {
     transition: all .3s ease-in-out;
-    border: 2px solid red;
     margin: 0 auto;
   }
 
   .dropdown-menu-active p {
-    padding-bottom: 1.5rem;
+    padding-bottom: 2rem;
   }
 
   .display-none {
@@ -501,6 +500,21 @@ a {
 .projects-box .more-details a:hover {
   font-weight: 700;
 }
+
+@media (max-width: 699px) {
+  .projects .project-container {
+    grid-template-columns: 12fr;
+    grid-gap: 1.5rem;
+  }
+
+  .project-container .projects-box {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+
+
 
 /* =========================
 ============================
