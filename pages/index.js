@@ -7,6 +7,7 @@ import Resume from '../components/resume/resume'
 import Sideprojects from '../components/sideprojects/sideprojects'
 import Contact from '../components/contact/contact'
 import Intro from '../components/intro/intro'
+// import Dropdown from '../components/dropdown/dropdown'
 
 
 export default function Home() {
@@ -67,26 +68,22 @@ export default function Home() {
         </div>
 
         <div className={menu ? "dropdown-menu-active" : "dropdown-menu"}>
+            <p><Link href="/"><a onClick={ () => handleToggleTab(3)}
+                  >Home</a></Link>
+            </p>
+              
+            <p><Link href="/"><a onClick={ () => handleToggleTab(0)}
+                >Resume</a></Link>
+            </p>
 
-        <p><Link href="/"><a 
-        onClick={ () => handleToggleTab(3)}
-              // className={toggleTab === 0 ? "active-drop" : "tab"}
-              >Home</a></Link>
-          </p>
-          
-          <p><Link href="/"><a onClick={ () => handleToggleTab(0)}
-              // className={toggleTab === 0 ? "active-drop" : "tab"}
-              >Resume</a></Link>
-          </p>
-
-          <p><Link href="/" ><a onClick={() => handleToggleTab(1)}
-              // className={toggleTab === 1 ? "active-tab" : "tab"}
-            >Projects</a></Link>
+            <p><Link href="/" ><a onClick={() => handleToggleTab(1)}
+              >Projects</a></Link>
             </p>
 
             <p><Link href="/" ><a onClick={() => handleToggleTab(2)}
-              // className={toggleTab === 2 ? "active-tab" : "tab"}
-            >Contact</a></Link></p>
+                >Contact</a></Link>
+            </p>
+
         </div>
 
 
@@ -97,11 +94,15 @@ export default function Home() {
           <div className={toggleTab === 3 ? "active" : "disabled"}><Intro /></div>
         </div>
 
-
+        
         <div 
-        className={menu ? "display-none" : "buttons"}>
-          <button>hey</button>
-          <button>hey</button>
+        className={menu ? "display-none" : "buttons" && toggleTab === 3 ? "display-none": ""}>
+          <div>
+            <button>hey</button>
+            <button>hey</button>
+          </div>
+            
+          
         </div>
       </div>
     </>

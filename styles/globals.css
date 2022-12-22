@@ -302,6 +302,10 @@ a {
   .download {
     display: none;
   }
+
+  .description .description-item p {
+    font-size: 0.85rem;
+  }
 }
 
 
@@ -354,7 +358,6 @@ a {
 }
 
 .resume .resume-contacts p {
-  padding-left: 5px;
   font-weight: 500;
 }
 
@@ -368,6 +371,7 @@ a {
   padding: 2px;
   text-align: center;
   margin:15px 0;
+  box-sizing: border-box;
 }
 
 .section .section-body {
@@ -412,6 +416,20 @@ a {
   font-weight: 700;
 }
 
+@media (max-width: 499px) {
+  .skills p {
+    font-size: 0.85rem;
+  }
+
+  .resume {
+    padding: 0.85rem;
+  }
+
+  .section .section-body {
+    font-size: 0.85rem;
+  }
+}
+
 /* =========================
 ============================
 ============================
@@ -429,7 +447,6 @@ a {
 
 .projects {
   border-radius: 10px;
-  padding: 10px;
   height: 85vh;
   overflow-Y: scroll;
   width: 100%;
@@ -443,7 +460,8 @@ a {
   font-size: 1rem;
   font-family: 'Aboreto', cursive;
   text-align: center;
-  padding-bottom: 1rem;
+  padding: 0.5rem 0;
+  font-weight: 700;
 }
 
 
@@ -595,7 +613,7 @@ a {
 @media (max-width: 559px) {
   .resume .resume-header h3 {
     font-weight: 600;
-    font-size: 1.7rem;
+    font-size: 1.4rem;
   }
 
   .resume .resume-contacts {
@@ -605,8 +623,40 @@ a {
 @media (max-width: 499px) {
   
   .landing-container{
-    padding: 1.5rem;
+    padding: 1rem;
+  }
+
+  .form {
+    padding: 0 1rem;
   }
 }
 
 
+/* =========================
+============================
+============================
+  INTRO
+==========================
+==========================
+==========================
+*/
+
+.home-page {
+  height: 70vh;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.home-page h3 {
+  font-size: 1.9rem;
+  padding-bottom: 1rem;
+}
+
+.explore {
+  padding: 10px 30px;
+  border: 2px solid  black;
+  border-radius: 5px;
+  margin: 0 auto;
+  width: 50vw;
+  margin-top: 2rem;
+}
