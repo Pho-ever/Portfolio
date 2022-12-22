@@ -37,7 +37,7 @@ export default function Home() {
     <>
       <div className="landing-container">
         <div className="info-container">
-          <h3>Hello <br/> I'm {constant.name}</h3>
+          <h3>Hello <br/> I am {constant.name}</h3>
           <p>{constant.intro}</p>
 
           <div className="details">
