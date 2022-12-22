@@ -12,7 +12,7 @@ export default function Resume() {
                         <div>
                             <Link href="https://drive.google.com/file/d/1_McYUjpr3eAvyvOTdEPcHWc4cH28Kd7_/view?usp=share_link">
                                 <a target="_blank">
-                                    <Image src='/download.png' width="20%" height="20%"/>
+                                    <Image src='/download.png' width="20%" height="20%" alt="download"/>
                                 </a>
                             </Link>
                             <Link href="https://drive.google.com/file/d/1_McYUjpr3eAvyvOTdEPcHWc4cH28Kd7_/view?usp=share_link">
