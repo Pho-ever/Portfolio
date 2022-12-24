@@ -2,26 +2,26 @@ import { constant } from "../constant/constant"
 import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image';
-// import Projects from '../components/projects/projects'
+import Projects from "../projects/projects"
 
 
 
 
 
-const Intro = () => {
+const Intro = (project) => {
 
-  // const handleExplore = () => {
-    
-  // }
+  const handleExplore = () => {
+    <Projects />
+  }
 
-  // const [toggleTab, setToggleTab] = useState(0)
+  const [toggleTab, setToggleTab] = useState(0)
 
 
   return ( <>
       <div className="home-page">
           <h3>Hello! <br /> I am {constant.name}</h3>
           <p>{constant.intro}</p>
-          <button className="explore" >Explore</button>
+          {/* <button className="explore">Explore</button> */}
       </div>
           
   </> 

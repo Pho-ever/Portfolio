@@ -7,7 +7,6 @@ import Resume from '../components/resume/resume'
 import Sideprojects from '../components/sideprojects/sideprojects'
 import Contact from '../components/contact/contact'
 import Intro from '../components/intro/intro'
-// import Dropdown from '../components/dropdown/dropdown'
 
 
 export default function Home() {
@@ -94,16 +93,23 @@ export default function Home() {
           <div className={toggleTab === 3 ? "active" : "disabled"}><Intro /></div>
         </div>
 
-        
-        <div 
-        className={menu ? "display-none" : "buttons" && toggleTab === 3 ? "display-none": ""}>
-          <div>
-            <button>hey</button>
-            <button>hey</button>
-          </div>
-            
-          
+        {toggleTab === 3 || toggleTab === 2 ? null : 
+          <div 
+          className={menu ? "display-none" : "buttons"}>
+            <button 
+            onClick={toggleTab === 0 ? 
+              () => handleToggleTab(3) : 
+              () => handleToggleTab(0)}
+            >{toggleTab === 0 ? "Home": "Resume"}</button>
+
+            <button
+            onClick={toggleTab === 0 ? 
+              () => handleToggleTab(1) : 
+              () => handleToggleTab(2)}
+            >{toggleTab === 0 ? "Projects" : "Contact"}</button>
         </div>
+        }
+        
       </div>
     </>
   )
