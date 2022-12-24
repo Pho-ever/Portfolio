@@ -7,6 +7,7 @@ import Resume from '../components/resume/resume'
 import Sideprojects from '../components/sideprojects/sideprojects'
 import Contact from '../components/contact/contact'
 import Intro from '../components/intro/intro'
+import Navbar from "../components/Navbar"
 
 
 export default function Home() {
@@ -22,21 +23,41 @@ export default function Home() {
 
   const handleHamburger = () => {
     setMenu(!menu)
-    
-  // const body = document.querySelector("body");
-  //   if (menu === true) {
-  //     // Disable scroll
-  //     body.style.overflow = "hidden";
-  // } else {
-  //     // Enable scroll
-  //     body.style.overflow = "auto";
-  // }
 }
 
   return (
     <>
       <div className="landing-container">
-        <div className="info-container">
+
+        {/* <div className="header-wrapper">
+            <p>Logo</p>
+            <button 
+            className={menu ? "menu-btn-active" : "menu-btn"}
+            onClick={handleHamburger}
+            >
+              <div className="btn-line-1"></div>
+              <div className="btn-line-2"></div>
+            </button>
+          </div>
+
+          <div className={menu ? "dropdown-menu-active" : "dropdown-menu"}>
+            <p><Link href="/"><a>Home</a></Link>
+            </p>
+              
+            <p><Link href="/resume"><a>Resume</a></Link>
+            </p>
+
+            <p><Link href="/project" ><a>Projects</a></Link>
+            </p>
+
+            <p><Link href="/" ><a>Contact</a></Link>
+            </p>
+
+        </div> */}
+
+        <Navbar/>
+
+        <div className={menu ? "display-none" : "info-container"}>
           <h3>Hello <br/> I am {constant.name}</h3>
           <p>{constant.intro}</p>
 
@@ -55,60 +76,14 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="header-wrapper">
-          <p>icon</p>
-          <button 
-          className={menu ? "menu-btn-active" : "menu-btn"}
-          onClick={handleHamburger}
-          >
-            <div className="btn-line-1"></div>
-            <div className="btn-line-2"></div>
-          </button>
-        </div>
 
-        <div className={menu ? "dropdown-menu-active" : "dropdown-menu"}>
-            <p><Link href="/"><a onClick={ () => handleToggleTab(3)}
-                  >Home</a></Link>
-            </p>
-              
-            <p><Link href="/"><a onClick={ () => handleToggleTab(0)}
-                >Resume</a></Link>
-            </p>
-
-            <p><Link href="/" ><a onClick={() => handleToggleTab(1)}
-              >Projects</a></Link>
-            </p>
-
-            <p><Link href="/" ><a onClick={() => handleToggleTab(2)}
-                >Contact</a></Link>
-            </p>
-
-        </div>
-
-
-        <div  className={menu ? "display-none" : ""}>
+        <div className="display-none">
           <div className={toggleTab === 0 ? "active" : "disabled"}><Resume /></div>
           <div className={toggleTab === 1 ? "active" : "disabled"}><Projects /></div>
           <div className={toggleTab === 2 ? "active" : "disabled"}><Contact /></div>
           <div className={toggleTab === 3 ? "active" : "disabled"}><Intro /></div>
         </div>
 
-        {toggleTab === 3 || toggleTab === 2 ? null : 
-          <div 
-          className={menu ? "display-none" : "buttons"}>
-            <button 
-            onClick={toggleTab === 0 ? 
-              () => handleToggleTab(3) : 
-              () => handleToggleTab(0)}
-            >{toggleTab === 0 ? "Home": "Resume"}</button>
-
-            <button
-            onClick={toggleTab === 0 ? 
-              () => handleToggleTab(1) : 
-              () => handleToggleTab(2)}
-            >{toggleTab === 0 ? "Projects" : "Contact"}</button>
-        </div>
-        }
         
       </div>
     </>
