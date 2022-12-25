@@ -156,10 +156,10 @@ a {
 
   .buttons {
     display: flex;
-    justify-content: space-between;
-    width: 70%;
+    justify-content: space-around;
     margin: 0 auto;
     padding: 1rem 0;
+    width: 100%;
 
   }
 
@@ -170,14 +170,11 @@ a {
     outline: none;
     border-radius: 10px;
     padding: 10px;
-    font-size: 1rem;
+    font-size: 0.85rem;
     cursor: pointer;
     color: black;
   }
 
-.section .section-body {
-  padding: 0 !important;
-}
 
   .details {
     padding: 0;
@@ -278,7 +275,7 @@ a {
   .dropdown-menu-active {
     margin: 0 auto;
     position: relative;
-    height: 100vh;
+    height: 100%;
     z-index: 99999;
     width: 100%;
     background-color: white;
@@ -363,7 +360,7 @@ a {
 
 .resume .resume-header h3 {
   font-weight: 600;
-  font-size: 1.9rem;
+  font-size: 1.8rem;
 }
 
 .resume .resume-contacts{
@@ -472,6 +469,10 @@ a {
   display: none;
 }
 
+.section .section-title .padding {
+  padding-top: 1rem !important;
+}
+
 .project-header{
   font-size: 1rem;
   font-family: 'Aboreto', cursive;
@@ -491,7 +492,7 @@ a {
   height: 10rem;
   background-color: rgba(190, 188, 188, 0.377);
   padding: 15px;
-  transition: width .5s, height .5s, background-color .5s, transform .5s;
+  transition: width .3s, height .3s, background-color .3s, transform .3s;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -539,6 +540,7 @@ a {
   .projects {
     height: 100%;
     overflow: normal;
+    margin-top: 0;
 }
 }
 
@@ -618,16 +620,10 @@ a {
 }
 
 
-
-
 @media (max-width: 900px) {
   .resume .resume-contacts a {
     padding-left: 5px;
     font-size: 0.85rem;
-  }
-
-  .resume .resume-header h3 {
-    font-size: 2rem;
   }
 
 }
@@ -636,13 +632,13 @@ a {
   .resume {
     overflow-Y: hidden;
     height: 100%;
+    margin-top: 0;
   }
 }
 
 @media (max-width: 559px) {
   .resume .resume-header h3 {
     font-weight: 600;
-    font-size: 1.4rem;
   }
 
   .resume .resume-contacts {
@@ -672,7 +668,6 @@ a {
 */
 
 .home-page {
-  height: 70vh;
   text-align: center;
   margin-top: 2rem;
 }
@@ -682,12 +677,24 @@ a {
   padding-bottom: 1rem;
 }
 
-.explore {
-  padding: 10px 30px;
-  border: 2px solid  black;
-  border-radius: 5px;
-  margin: 0 auto;
-  width: 50vw;
-  margin-top: 2rem;
-  cursor: pointer;
+.more-details {
+display: none;
+}
+
+
+@media (max-width: 990px) {
+  .more-details {
+    display: block;
+    }
+
+  .explore {
+    padding: 10px 30px;
+    border: 2px solid  black;
+    border-radius: 5px;
+    margin: 0 auto;
+    width: 50vw;
+    margin-top: 2rem;
+    cursor: pointer;
+  }
+  
 }

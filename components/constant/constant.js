@@ -2,11 +2,16 @@ const name = 'Oluwayomi Forever';
 
 const profession = "Frontend Developer"
 
-const title = 'Frontend Developer'
+// const title = 'Frontend Developer'
 
-const intro = "I am a Frontend Developer. I build reuseable user interfaces and i have a passion for problem-solving, strong foundation and understanding of frontend principles and proven track record of delivering high-quality and scalable code."
+const intro = "I'm a Frontend Developer. I build reuseable user interfaces and i have a passion for problem-solving, strong foundation and understanding of frontend principles and proven track record of delivering high-quality and scalable code."
 
-const profile = "Highly motivated front-end developer with background working effectively in dynamic enviroment and experience writing clean code, implementing and building responsive software and web applications using React while also applying agile methodologies. Proud team player with good communication skills, a solid understanding of Agile techniques and its approach. Proficient in developing fast loading user interfaces. "
+const profile_1 = "As a front-end developer with background working effectively, experience writing clean code, implementing and building responsive and scalable user interfaces. I have solid understanding of Agile methodology and a good foundation in Javascript and Typescript. "
+
+const profile_2 = "I have worked on challenging software projects during my internship programme and I am a cooperative team player that values information exchange and collaboration. "
+
+const profile_3 = "I am excited to continue learning and growing as a frontend developer. I am also eager to apply my skills and knowledge to tackle challenging problems, build reuseable user interface and make positive impacts in the world. "
+
 
 const skills = [
     {
@@ -122,8 +127,10 @@ export const constant = {
     name,
     intro,
     profession,
-    title,
-    profile,
+    // title,
+    profile_1,
+    profile_2,
+    profile_3,
     skills,
     workExperiences,
     education,

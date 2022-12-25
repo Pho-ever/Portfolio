@@ -1,13 +1,12 @@
-import styles from '../styles/Home.module.css'
-import Link from 'next/link'
-import { useState } from 'react'
-import { constant } from '../components/constant/constant'
-import Projects from '../components/projects/projects'
-import Resume from '../components/resume/resume'
-import Sideprojects from '../components/sideprojects/sideprojects'
-import Contact from '../components/contact/contact'
-import Intro from '../components/intro/intro'
-import Navbar from "../components/Navbar"
+import styles from '../styles/Home.module.css';
+import Link from 'next/link';
+import { useState } from 'react';
+import { constant } from '../components/constant/constant';
+import Projects from '../components/projects/projects';
+import Resume from '../components/resume/resume';
+import Contact from '../components/contact/contact';
+import Intro from '../components/intro/intro';
+import Dropdown from "../components/dropdown"
 
 
 export default function Home() {
@@ -17,7 +16,6 @@ export default function Home() {
 
   const handleToggleTab = (index) => {
     setToggleTab(index)
-    setMenu(false)
   }
 
 
@@ -29,7 +27,7 @@ export default function Home() {
     <>
       <div className="landing-container">
 
-        {/* <div className="header-wrapper">
+        <div className="header-wrapper">
             <p>Logo</p>
             <button 
             className={menu ? "menu-btn-active" : "menu-btn"}
@@ -40,27 +38,10 @@ export default function Home() {
             </button>
           </div>
 
-          <div className={menu ? "dropdown-menu-active" : "dropdown-menu"}>
-            <p><Link href="/"><a>Home</a></Link>
-            </p>
-              
-            <p><Link href="/resume"><a>Resume</a></Link>
-            </p>
-
-            <p><Link href="/project" ><a>Projects</a></Link>
-            </p>
-
-            <p><Link href="/" ><a>Contact</a></Link>
-            </p>
-
-        </div> */}
-
-        <Navbar/>
+          {menu ? <Dropdown /> : null}
 
         <div className={menu ? "display-none" : "info-container"}>
-          <h3>Hello <br/> I am {constant.name}</h3>
-          <p>{constant.intro}</p>
-
+            <Intro />
           <div className="details">
             <p>-----<Link href="/"><a onClick={() => handleToggleTab(0)}
               className={toggleTab === 0 ? "active-tab" : "tab"}>Resume</a></Link></p>
@@ -72,7 +53,6 @@ export default function Home() {
             <p>--------<Link href="/" ><a onClick={() => handleToggleTab(2)}
               className={toggleTab === 2 ? "active-tab" : "tab"}
             >Contact</a></Link></p>
-
           </div>
         </div>
 
@@ -81,7 +61,6 @@ export default function Home() {
           <div className={toggleTab === 0 ? "active" : "disabled"}><Resume /></div>
           <div className={toggleTab === 1 ? "active" : "disabled"}><Projects /></div>
           <div className={toggleTab === 2 ? "active" : "disabled"}><Contact /></div>
-          <div className={toggleTab === 3 ? "active" : "disabled"}><Intro /></div>
         </div>
 
         

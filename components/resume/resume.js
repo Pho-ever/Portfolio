@@ -20,14 +20,16 @@ export default function Resume() {
                             </Link>
                         </div>
                 </div>
-                <div className="resume-contacts">
+                {/* <div className="resume-contacts">
                     <p>{constant.profession}</p>
-                </div>
+                </div> */}
             </div>
 
             <div className="section">
                 <p className="section-title">PROFILE</p>
-                <p className="section-body">{constant.profile}</p>
+                <p className="section-body">{constant.profile_1}</p>
+                <p className="section-body">{constant.profile_2}</p>
+                <p className="section-body">{constant.profile_3}</p>
             </div>
             <div className="section">
                 <p className="section-title">SKILLS</p>
@@ -92,7 +94,6 @@ export default function Resume() {
                     </div>
                 </div>
             </div>
-
 
         </div>
     )
