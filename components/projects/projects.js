@@ -20,9 +20,8 @@ export default function Projects() {
                             <div className="frameworks">
                                 <p>{project.frameworks}</p>
                                 <div className="more-details">
-                                    <Link href={project.live}><a><Image src="/icons/eyes.svg" width="15%" height="15%" alt="live"/>Live</a></Link>
-                                    <Link href=
-                                    "#"><a>Project Description</a></Link>
+                                    <Link href={project.live}><a target="_blank"><Image src="/icons/eyes.svg" width="15%" height="15%" alt="live"/>Live</a></Link>
+                                    {/* <Link href="#"><a>Project Description</a></Link> */}
                                 </div>
                                 
                             </div>

@@ -610,14 +610,20 @@ a {
 .form button {
   width: 100%;
   padding: 10px;
-  font-weight: 600;
+  font-weight: 500;
   border: 1px solid black;
   border-radius: 5px;
-  background-color: rgba(190, 188, 188, 0.664);
+  background-color: rgba(190, 188, 188, 0.438);
   cursor: pointer;
   color: black;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
+
+.form button div {
+  display: block !important;
+}
+
+
 
 
 @media (max-width: 900px) {

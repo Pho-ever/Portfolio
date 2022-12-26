@@ -1,16 +1,21 @@
 import React, { useRef } from 'react';
+import { useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { TailSpin } from 'react-loader-spinner';
+
 
 const Contact = () => {
-
+  const [formStatus, setFormStatus] = useState(false);
 
   const form = useRef();
 
+
+
   const sendEmail = (e) => {
     e.preventDefault();
-
+    setFormStatus(true);
     emailjs.sendForm(
       'service_jdg1e0f', 
       'template_jegc42k', 
@@ -21,6 +26,7 @@ const Contact = () => {
           console.log(result.text);
           toast.success("Your message has been sent")
           e.target.reset();
+          setFormStatus(false);
       }, (error) => {
           console.log(error.text);
       });
@@ -59,11 +65,15 @@ const Contact = () => {
           <textarea name="message" required/>
         </div>
 
-        <button type="submit" >SEND MESSAGE</button>
+        <button type="submit" >{formStatus ? (
+          <TailSpin color='#000' height={24} width={24} ariaLabel='loading' className="tailspin"/>
+          ) : (
+            "SEND MESSAGE"
+          )}</button>
       </form>
       <ToastContainer
       position="top-center"
-      autoClose={5000}
+      autoClose={1500}
       hideProgressBar={false}
       newestOnTop={false}
       closeOnClick

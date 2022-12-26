@@ -2,7 +2,6 @@ const name = 'Oluwayomi Forever';
 
 const profession = "Frontend Developer"
 
-// const title = 'Frontend Developer'
 
 const intro = "I'm a Frontend Developer. I build reuseable user interfaces and i have a passion for problem-solving, strong foundation and understanding of frontend principles and proven track record of delivering high-quality and scalable code."
 
@@ -26,10 +25,6 @@ const skills = [
         title: "Tooling",
         body: "Git, Npm"
     },
-    // {
-    //     title: "Soft skills",
-    //     body: "Googling, Teamwork, Integrity, Open-mindedness, Willingness to ask questions"
-    // }
 ]
 
 const workExperiences = [
@@ -72,52 +67,34 @@ const education = [
 const projects = [
     {
         title: "Pura-vida",
-        subtitle: "A platform to view and book Beach-House and Short-let Apartments",
+        subtitle: "A Beach-house and Short-let Apartment booking website",
         frameworks: "NextJS + Typescript + SwiperJS + Redux",
-        live: "www.pura-vida.web.app"
+        live: "https://pura-vida.web.app"
     },
     {
-        title: "Phorever.dev",
-        subtitle: "My Portfolio Website",
-        frameworks: "NextJS + CSS module",
-        live: "#"
+        title: "Parentyn",
+        subtitle: "A Parental Control and Remote Monitoring Application.",
+        frameworks: "React + MaterialUI + Redux",
+        live: "https://parentyn.com/"
     },
     {
-        title: "Phorever.dev",
-        subtitle: "My Portfolio Website",
-        frameworks: "NextJS + CSS module",
-        live: "#"
+        title: "Calculator",
+        subtitle: "Simple Calculator App",
+        frameworks: "HTML + CSS + Javascript",
+        live: "https://calculatorr-app.netlify.app/"
     },
     {
-        title: "Phorever.dev",
-        subtitle: "My Portfolio Website",
-        frameworks: "NextJS + CSS module",
-        live: "#"
+        title: "Todo-List",
+        subtitle: "Simple Todo List App",
+        frameworks: "HTML + CSS + Javascript",
+        live: "https://todo-llist.netlify.app/"
     },
     {
-        title: "Phorever.dev",
-        subtitle: "My Portfolio Website",
-        frameworks: "NextJS + CSS module",
-        live: "#"
-    },
-    {
-        title: "Phorever.dev",
-        subtitle: "My Portfolio Website",
-        frameworks: "NextJS + CSS module",
-        live: "#"
-    },
-    {
-        title: "Phorever.dev",
-        subtitle: "My Portfolio Website",
-        frameworks: "NextJS + CSS module",
-        live: "#"
-    },
-    {
-        title: "Phorever.dev",
-        subtitle: "My Portfolio Website",
-        frameworks: "NextJS + CSS module",
-        live: "#"
-    },
+        title: "Davs University",
+        subtitle: "Simple University Landing page",
+        frameworks: "HTML + CSS + Javascript",
+        live: "https://davs-uni.netlify.app/"
+    }
 ]
 
 
@@ -127,7 +104,6 @@ export const constant = {
     name,
     intro,
     profession,
-    // title,
     profile_1,
     profile_2,
     profile_3,
