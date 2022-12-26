@@ -32,9 +32,9 @@ const ContactPage = () => {
       {menu ? null : <Contact/>}
       {menu ? 
         null : 
-      <div className="buttons">
-        <button><Link href="/"><a>Home</a></Link></button>
-      </div>
+          <div className="buttons">
+            <Link href="/"><button><a>Home</a></button></Link>
+          </div>
         }
       
     </div>

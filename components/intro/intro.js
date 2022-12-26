@@ -4,7 +4,6 @@ import Link from 'next/link'
 import Image from 'next/image';
 
 
-
 const Intro = () => {
 
   return ( <>
@@ -13,9 +12,11 @@ const Intro = () => {
           <p>{constant.intro}</p>
 
           <div className="more-details">
+          <Link href="/project">
             <button className="explore">
-              <Link href="/project"><a>Explore</a></Link>
+              <a>Explore</a>
             </button>
+          </Link>
           </div>
           
       </div>

@@ -29,10 +29,10 @@ const Projectpage = () => {
             {menu ? <Dropdown /> : false}
             {menu ? null : <Projects/>}
             {menu ? null : 
-                      <div className="buttons">
-                          <button><Link href="/resume"><a>Resume</a></Link></button>
-                          <button><Link href="/contact"><a>Contact</a></Link></button>
-                      </div>
+                <div className="buttons">
+                    <Link href="/resume"><button><a>Resume</a></button></Link>
+                    <Link href="/contact"><button><a>Contact</a></button></Link>
+                </div>
         }
   </div>
     

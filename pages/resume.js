@@ -31,8 +31,8 @@ const ResumePage = () => {
       {menu ? 
       null : 
       <div className="buttons">
-            <button><Link href="/"><a>Home</a></Link></button>
-            <button><Link href="/project"><a>project</a></Link></button>
+            <Link href="/"><button><a>Home</a></button></Link>
+            <Link href="/project"><button><a>project</a></button></Link>
         </div>
         }
           
