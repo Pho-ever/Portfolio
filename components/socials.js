@@ -4,7 +4,6 @@ const Socials = () => {
       <div className="socials">
           <div></div>
       </div>
-      </>
     </>
   );
 }
