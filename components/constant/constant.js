@@ -81,19 +81,22 @@ const projects = [
         title: "Calculator",
         subtitle: "Simple Calculator App",
         frameworks: "HTML + CSS + Javascript",
-        live: "https://calculatorr-app.netlify.app/"
+        live: "https://calculatorr-app.netlify.app/",
+        code: "https://github.com/Pho-ever/FrontEnd_practices/tree/calculator"
     },
     {
         title: "Todo-List",
         subtitle: "Simple Todo List App",
         frameworks: "HTML + CSS + Javascript",
-        live: "https://todo-llist.netlify.app/"
+        live: "https://todo-llist.netlify.app/",
+        code: "https://github.com/Pho-ever/FrontEnd_practices/tree/todo-list-app"
     },
     {
         title: "Davs University",
         subtitle: "Simple University Landing page",
         frameworks: "HTML + CSS + Javascript",
-        live: "https://davs-uni.netlify.app/"
+        live: "https://davs-uni.netlify.app/",
+        code: "https://github.com/Pho-ever/FrontEnd_practices/tree/davs-Uni"
     }
 ]
 

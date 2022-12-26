@@ -21,7 +21,7 @@ export default function Projects() {
                                 <p>{project.frameworks}</p>
                                 <div className="more-details">
                                     <Link href={project.live}><a target="_blank"><Image src="/icons/eyes.svg" width="15%" height="15%" alt="live"/>Live</a></Link>
-                                    {/* <Link href="#"><a>Project Description</a></Link> */}
+                                    {project.code ?  <Link href={project.code}><a target="_blank"><Image src="/icons/git.png" width="20%" height="20%" alt="code"/>Code</a></Link> : null}
                                 </div>
                                 
                             </div>
