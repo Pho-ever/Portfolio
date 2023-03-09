@@ -2,6 +2,7 @@ import Projects from "../components/projects/projects"
 import Dropdown from "../components/dropdown";
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image'
 
 
 
@@ -17,7 +18,7 @@ const Projectpage = () => {
   <>
           <div className="landing-container">
             <div className="header-wrapper">
-                <p>Logo</p>
+                <Image src="/../public/icons/logo.png" width="40" height="130" alt="logo"/>
                 <button 
                   className={menu ? "menu-btn-active" : "menu-btn"}
                   onClick={handleHamburger}

@@ -28,7 +28,9 @@ export default function Resume() {
             <div className="section">
                 <p className="section-title">PROFILE</p>
                 <p className="section-body">{constant.profile_1}</p>
+                <br/>
                 <p className="section-body">{constant.profile_2}</p>
+                <br/>
                 <p className="section-body">{constant.profile_3}</p>
             </div>
             <div className="section">

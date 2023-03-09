@@ -1,6 +1,7 @@
 import Resume from "../components/resume/resume";
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image'
 import Dropdown from "../components/dropdown";
 
 
@@ -16,7 +17,7 @@ const ResumePage = () => {
   <>
     <div className="landing-container">
         <div className="header-wrapper">
-                    <p>Logo</p>
+                    <Image src="/../public/icons/logo.png" width="40" height="130" alt="logo"/>
                     <button 
                       className={menu ? "menu-btn-active" : "menu-btn"}
                       onClick={handleHamburger}
@@ -32,7 +33,7 @@ const ResumePage = () => {
       null : 
       <div className="buttons">
             <Link href="/"><button><a>Home</a></button></Link>
-            <Link href="/project"><button><a>project</a></button></Link>
+            <Link href="/project"><button><a>Projects</a></button></Link>
         </div>
         }
           

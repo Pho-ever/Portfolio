@@ -30,7 +30,7 @@ const skills = [
 const workExperiences = [
     {
         company: 'Codematic Technology',
-        role: 'Software Engineer Intern',
+        role: 'Software Engineer (Frontend)',
         startDate: 'JUN 2021',
         endDate: '',
         achievements: ['Implemented landing pages and websites from conception to deployment while optimizing and maintaining them.',
@@ -60,7 +60,7 @@ const workExperiences = [
 const education = [
     {
         school: "B.Sc Building at Obafemi Awolowo University, Ile-Ife",
-        year: "SEP 2018 - CURRENT"
+        year: "SEP 2017 - MAY 2022"
     }
 ]
 
