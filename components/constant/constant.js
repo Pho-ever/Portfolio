@@ -3,27 +3,23 @@ const name = 'Oluwayomi Forever';
 const profession = "Frontend Developer"
 
 
-const intro = "I'm a Frontend Developer. I build reuseable user interfaces and i have a passion for problem-solving, strong foundation and understanding of frontend principles and proven track record of delivering high-quality and scalable code."
+const intro = "I'm a frontend developer with more than one year of internship experience. I specialize in building user interfaces using ReactJs and NextJs. I have a strong foundation and understanding of frontend principles and proven track record of delivering high-quality and scalable code."
 
-const profile_1 = "As a front-end developer with background working effectively, experience writing clean code, implementing and building responsive and scalable user interfaces. I have solid understanding of Agile methodology and a good foundation in Javascript and Typescript. "
-
-const profile_2 = "I have worked on challenging software projects during my internship programme and I am a cooperative team player that values information exchange and collaboration. "
-
-const profile_3 = "I am excited to continue learning and growing as a frontend developer. I am also eager to apply my skills and knowledge to tackle challenging problems, build reuseable user interface and make positive impacts in the world. "
+const profile_1 = "A reliable front-end developer who specializes in Reactjs, building reusable components, paying attention to details and communicates effectively.  Has a solid understanding of Agile techniques, a competitive and proactive attitude and experience cooperating with teams made up of a diverse spectrum of individuals. "
 
 
 const skills = [
     {
         title: 'Languages',
-        body: "Javascript/Typescript, Python, HTML5, CSS3"
+        body: "HTML, CSS, JavaScript, Typescript"
     },
     {
-        title: "Framework/Libaries",
-        body: "ReactJS, NextJS, Boostrap,  MaterialUI"
+        title: "Technologies",
+        body: "ReactJs, NextJs, Lit, Github, Git, NPM, MaterialUI, Bootstrap"
     },
     {
-        title: "Tooling",
-        body: "Git, Npm"
+        title: "Other skills",
+        body: "API Integration, Responsive design, cross browser compatibility, command line, Optimization"
     },
 ]
 
@@ -33,34 +29,19 @@ const workExperiences = [
         role: 'Software Engineer (Frontend)',
         startDate: 'JUN 2021',
         endDate: '',
-        achievements: ['Implemented landing pages and websites from conception to deployment while optimizing and maintaining them.',
-            'Teamed up with the product team to put new feature advancements into practice while maintaining branding guidelines.',
-            'Maintained brand consistency throughout the design while striking a balance between functional and aesthetic design.',
-            'Solved frontend technical problems to satisfy product specifications for building new websites.',
-            'Received mentoring from experienced developers while working and learning coding best practices',
-            'Improved frontend projects while optimizing applications for maximum speed'
+        achievements: ['•Implemented UI/UX designs using a mobile-first approach',
+            'Built multiple user interfaces without compromising functionality for aesthetics',
+            'Designed and implemented frontend applications along with third-party software integrations',
+            'Maintained graphic standards and branding interface throughout the interface of products.',
+            'Collaborated with four other developers to build and deploy new-user facing features.'
         ],
-    },
-    {
-        company: 'The Apocalypse',
-        role: 'Frontend Developer (Contract)',
-        startDate: 'JUN 2022',
-        endDate: 'SEP 2022',
-        achievements: [ 'Developing and maintaining the user interface while implementing design for mobile          interactions on their official website',
-            'Increased output by over 30% by supervising and hauling tasks in order to accomplish compliance with the laid down plans.',
-            'Managed software workflow and followed SEO best practices while fixing bugs and testing for usability.',
-            'Solved technical issues and maintenance of live stream equipment and increased the social media presence of the organization by over 60%. ',
-            'Creating and implementing tools that improve site interaction regardless of the browser.',
-            'Established an efficient workflow processes, monitored productivity and implemented modifications to improve overall effectiveness of activities. '
-            
-        ],
-    },
+    }
 ]
 
 const education = [
     {
         school: "B.Sc Building at Obafemi Awolowo University, Ile-Ife",
-        year: "SEP 2017 - MAY 2022"
+        year: "SEP 2017 - Present"
     }
 ]
 
@@ -68,21 +49,20 @@ const projects = [
     {
         title: "Pura-vida",
         subtitle: "A Beach-house and Short-let Apartment booking website",
-        frameworks: "NextJS + Typescript + SwiperJS + Redux",
+        frameworks: "NextJS + Typescript + SwiperJS ",
         live: "https://pura-vida.web.app"
     },
     {
         title: "Parentyn",
-        subtitle: "A Parental Control and Remote Monitoring Application.",
+        subtitle: "A Parent Control and Remote Monitoring Application.",
         frameworks: "React + MaterialUI + Redux",
         live: "https://parentyn.com/"
     },
     {
-        title: "Calculator",
-        subtitle: "Simple Calculator App",
+        title: "Propel Africa",
+        subtitle: "Venture platform",
         frameworks: "HTML + CSS + Javascript",
-        live: "https://calculatorr-app.netlify.app/",
-        code: "https://github.com/Pho-ever/FrontEnd_practices/tree/calculator"
+        live: "https://www.propel.africa/",
     },
     {
         title: "Todo-List",
