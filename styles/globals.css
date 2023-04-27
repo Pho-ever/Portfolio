@@ -17,10 +17,16 @@ li {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  color: #fff;
+  /* background-color: #000; */
+}
+
+body{
+  background-color: #000;
 }
 
 a {
-  color: rgb(14, 12, 12);
+  color: #fff;
   text-decoration: none;
 }
 
@@ -28,7 +34,7 @@ a {
 .active-tab {
   font-weight: 800;
   font-size: 1.1rem;
-  color: black !important;
+  color: rgb(255, 255, 255) !important;
   transition: all .3s linear !important;
   padding-left: 2rem !important;
 }
@@ -48,7 +54,9 @@ a {
 }
 
 .info-container {
-  padding: 2rem 0 0;
+  /* padding: 2rem 0 0; */
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .info-container > h3 {
@@ -65,21 +73,21 @@ a {
 .details a {
   font-weight: 500;
   padding: 0 7px;
-  color: rgb(65, 65, 65);
+  color: rgba(253, 251, 251, 0.603);
 }
 
 .details p {
   padding-bottom: 0.5rem;
 }
 
-.landing-children {
+/* .landing-children {
   height: 90vh;
   border: 2px solid red;
   border-radius: 10px;
   width: 90%;
   overflow-y: scroll;
   padding:15px;
-}
+} */
 
 .landing-children::-webkit-scrollbar {
   display: none;
@@ -217,7 +225,8 @@ a {
     background-color: transparent;
     width: 40px;
     display: grid;
-    padding: 5px
+    padding: 5px;
+    cursor: pointer;
   }
 
   .header-wrapper .menu-btn-active .btn-line-1 {
@@ -229,7 +238,7 @@ a {
       transition: transform .2s linear;
       transition: transform .2s linear,-webkit-transform .2s linear;
       height: 2px;
-      background-color: black;
+      background-color: #fff;
       width: 100%;
       margin: 4px 0;
   }
@@ -243,7 +252,7 @@ a {
       transition: transform .2s linear;
       transition: transform .2s linear,-webkit-transform .2s linear;
       height: 2px;
-      background-color: black;
+      background-color: #fff;
       width: 100%;
       margin: 4px 0;
   }
@@ -255,11 +264,13 @@ a {
     width: 50px;
     display: grid;
     padding: 5px;
+    cursor: pointer;
+
   }
 
   .header-wrapper .menu-btn .btn-line-1{
       height: 2px;
-      background-color: black;
+      background-color: #fff;
       width: 70%;
       margin: 4px 0;
       margin-left: auto;
@@ -267,7 +278,7 @@ a {
 
   .header-wrapper .menu-btn .btn-line-2{
       height: 2px;
-      background-color: black;
+      background-color: #fff;
       width: 100%;
       margin: 4px 0;
   }
@@ -278,7 +289,7 @@ a {
     height: 100%;
     z-index: 99999;
     width: 100%;
-    background-color: white;
+    background-color: transparent;
 }
 
   .dropdown-menu-active p {
@@ -356,6 +367,7 @@ a {
   font-size: 12px;
   font-weight: 500;
   padding-left: 5px;
+  color: #fff;
 }
 
 .resume .resume-header h3 {
@@ -377,7 +389,8 @@ a {
 }
 .section .section-title {
   width: 100%;
-  background-color: rgba(190, 188, 188, 0.664);
+  /* background-color: #000; */
+  background-color: rgba(151, 148, 148, 0.281);
   font-weight: bold;
   padding: 2px;
   text-align: center;
@@ -459,8 +472,8 @@ a {
 
 .projects {
   border-radius: 10px;
-  height: 90vh;
-  overflow-Y: scroll;
+  /* height: 90vh; */
+  /* overflow-Y: scroll; */
   width: 100%;
   margin-top: 2rem;
 }
@@ -485,7 +498,9 @@ a {
 .projects .project-container {
   display: grid;
   grid-gap: 5px;
-  padding: 1rem;
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .project-container .projects-box {
@@ -497,14 +512,16 @@ a {
   flex-direction: column;
   justify-content: space-between;
   border-radius: 15px;
+  color: #000;
 }
 
 
 .project-container .projects-box:hover {
   transform: scale(1.2);
   z-index: 10;
-  border: 2px solid black;
-  background-color: rgba(190, 188, 188, 0.842);
+  border: 2px solid rgb(252, 251, 251);
+  background-color: rgba(136, 134, 134, 0.911);
+  /* color: #000; */
 }
 
 .projects-box .title {
@@ -573,6 +590,8 @@ a {
 .form {
   display: grid;
   padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .input-container {
@@ -593,7 +612,9 @@ a {
   padding: 10px;
   font-size: 0.85rem;
   border-radius: 5px;
-  border: 1px solid black;
+  border: 1px solid #fff;
+  color: #fff;
+  background-color: transparent;
   outline: 0;
 }
 
@@ -603,19 +624,21 @@ a {
   font-size: 1rem;
   height: 10rem;
   resize: none;
+  background-color: transparent;
+  color: #fff;
   border-radius: 5px;
-  border: 1px solid black;
+  border: 2px solid #fff;
 }
 
 .form button {
   width: 100%;
   padding: 10px;
   font-weight: 500;
-  border: 1px solid black;
+  border: 1px solid #fff;
   border-radius: 5px;
-  background-color: rgba(190, 188, 188, 0.438);
+  background-color: #000;
   cursor: pointer;
-  color: black;
+  color: white;
   font-size: 1rem;
 }
 
@@ -660,6 +683,7 @@ a {
 
   .form {
     padding: 0 1rem;
+    margin: 0;
   }
 }
 
@@ -679,8 +703,13 @@ a {
 }
 
 .home-page h3 {
-  font-size: 1.9rem;
+  font-size: 2.8rem;
   padding-bottom: 1rem;
+  text-align: left;
+}
+
+.home-page p {
+  text-align: left;
 }
 
 .more-details {
@@ -695,13 +724,15 @@ display: none;
 
   .explore {
     padding: 10px 30px;
-    border: 2px solid  black;
+    border: 2px solid  #fff;
     border-radius: 5px;
     margin: 0 auto;
     width: 50vw;
     margin-top: 2rem;
     cursor: pointer;
     font-size: 1.1rem;
+    color: #fff;
+    background-color: #000;
   }
   
 }

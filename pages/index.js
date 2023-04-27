@@ -11,8 +11,8 @@ import Dropdown from "../components/dropdown"
 
 
 export default function Home() {
-  const [toggleTab, setToggleTab] = useState(0)
-  const [toggleSideTab, setToggleSideTab] = useState(0)
+  const [toggleTab, setToggleTab] = useState(1)
+  const [toggleSideTab, setToggleSideTab] = useState(1)
   const [menu, setMenu] = useState(false)
 
   const handleToggleTab = (index) => {

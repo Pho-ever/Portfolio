@@ -8,7 +8,7 @@ const Intro = () => {
 
   return ( <>
       <div className="home-page">
-          <h3>Hello! <br /> I am {constant.name}</h3>
+          <h3>Hello! I'm <br/> {constant.name}</h3>
           <p>{constant.intro}</p>
 
           <div className="more-details">

@@ -66,7 +66,7 @@ const Contact = () => {
         </div>
 
         <button type="submit" >{formStatus ? (
-          <TailSpin color='#000' height={24} width={24} ariaLabel='loading' className="tailspin"/>
+          <TailSpin color='#fff' height={24} width={24} ariaLabel='loading' className="tailspin"/>
           ) : (
             "SEND MESSAGE"
           )}</button>
@@ -81,7 +81,7 @@ const Contact = () => {
       pauseOnFocusLoss
       draggable
       pauseOnHover
-      theme="light"
+      theme="dark"
       />
     </>
     );

@@ -3,9 +3,9 @@ const name = 'Oluwayomi Forever';
 const profession = "Frontend Developer"
 
 
-const intro = "I'm a frontend developer with more than one year of internship experience. I specialize in building user interfaces using ReactJs and NextJs. I have a strong foundation and understanding of frontend principles and proven track record of delivering high-quality and scalable code."
+const intro = "A Frontend Developer based in Lagos, Nigeria with passion for problem-solving, building responsive user interface using proper coding principles with a proven track record of delivering high-quality and scalable code."
 
-const profile_1 = "A reliable front-end developer who specializes in Reactjs, building reusable components, paying attention to details and communicates effectively.  Has a solid understanding of Agile techniques, a competitive and proactive attitude and experience cooperating with teams made up of a diverse spectrum of individuals. "
+const profile_1 = "A reliable front-end developer with more than one year of internship experience in Reactjs, building browser-compatible user interfaces. Specializes in paying attention to details and building reusable components. Has a solid understanding of Agile techniques, a competitive and proactive attitude, good communication, and experience cooperating with teams made up of a diverse spectrum of individuals. Looking to contribute my skills and experience to the engineering team at"
 
 
 const skills = [
@@ -29,7 +29,7 @@ const workExperiences = [
         role: 'Software Engineer (Frontend)',
         startDate: 'JUN 2021',
         endDate: '',
-        achievements: ['•Implemented UI/UX designs using a mobile-first approach',
+        achievements: ['Implemented UI/UX designs using a mobile-first approach',
             'Built multiple user interfaces without compromising functionality for aesthetics',
             'Designed and implemented frontend applications along with third-party software integrations',
             'Maintained graphic standards and branding interface throughout the interface of products.',
@@ -88,8 +88,6 @@ export const constant = {
     intro,
     profession,
     profile_1,
-    profile_2,
-    profile_3,
     skills,
     workExperiences,
     education,
