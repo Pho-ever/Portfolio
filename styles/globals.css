@@ -215,7 +215,7 @@ a {
 
   .header-wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
     height: 2rem;
     padding-top: 1rem;
   }

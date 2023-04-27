@@ -16,7 +16,7 @@ const Navbar = () => {
   return ( 
   <>
           <div className="header-wrapper">
-                <p>Logo</p>
+                {/* <p>Logo</p> */}
                 <button 
                   className={menu ? "menu-btn-active" : "menu-btn"}
                   onClick={handleHamburger}
