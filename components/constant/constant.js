@@ -60,7 +60,7 @@ const projects = [
     },
     {
         title: "Propel Africa",
-        subtitle: "Venture platform",
+        subtitle: "Venture platform for African talents",
         frameworks: "HTML + CSS + Javascript",
         live: "https://www.propel.africa/",
     },
