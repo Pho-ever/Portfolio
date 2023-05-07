@@ -17,7 +17,7 @@ const ResumePage = () => {
   <>
     <div className="landing-container">
         <div className="header-wrapper">
-                    <Image src="/../public/icons/logo.png" width="40" height="130" alt="logo"/>
+                    {/* <Image src="/../public/icons/logo.png" width="40" height="130" alt="logo"/> */}
                     <button 
                       className={menu ? "menu-btn-active" : "menu-btn"}
                       onClick={handleHamburger}

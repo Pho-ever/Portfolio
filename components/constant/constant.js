@@ -28,7 +28,7 @@ const workExperiences = [
         company: 'Codematic Technology',
         role: 'Software Engineer (Frontend)',
         startDate: 'JUN 2021',
-        endDate: '',
+        endDate: 'Apr 2023',
         achievements: ['Implemented UI/UX designs using a mobile-first approach',
             'Built multiple user interfaces without compromising functionality for aesthetics',
             'Designed and implemented frontend applications along with third-party software integrations',
@@ -50,7 +50,7 @@ const projects = [
         title: "Pura-vida",
         subtitle: "A Beach-house and Short-let Apartment booking website",
         frameworks: "NextJS + Typescript + SwiperJS ",
-        live: "https://pura-vida.web.app"
+        live: "https://www.puravidabeach.com/"
     },
     {
         title: "Parentyn",
