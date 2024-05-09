@@ -215,7 +215,7 @@ a {
 
   .header-wrapper {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     height: 2rem;
     padding-top: 1rem;
   }
@@ -472,8 +472,8 @@ a {
 
 .projects {
   border-radius: 10px;
-  /* height: 90vh; */
-  /* overflow-Y: scroll; */
+  height: 90vh;
+  overflow-Y: scroll;
   width: 100%;
   margin-top: 2rem;
 }

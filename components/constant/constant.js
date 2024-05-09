@@ -5,7 +5,7 @@ const profession = "Frontend Developer"
 
 const intro = "A Frontend Developer based in Lagos, Nigeria with passion for problem-solving, building responsive user interface using proper coding principles with a proven track record of delivering high-quality and scalable code."
 
-const profile_1 = "A reliable front-end developer with more than one year of internship experience in Reactjs, building browser-compatible user interfaces. Specializes in paying attention to details and building reusable components. Has a solid understanding of Agile techniques, a competitive and proactive attitude, good communication, and experience cooperating with teams made up of a diverse spectrum of individuals. Looking to contribute my skills and experience to the engineering team at"
+const profile_1 = "I am  reliable frontend developer with more than two years of experience in Reactjs, building browser-compatible user interfaces. I specialize in paying attention to details and building reusable components. I have a solid understanding of Agile techniques, a competitive and proactive attitude, good communication, and experience cooperating with teams made up of a diverse spectrum of individuals. Looking to contribute my skills and experience to the engineering team at"
 
 
 const skills = [
@@ -15,7 +15,7 @@ const skills = [
     },
     {
         title: "Technologies",
-        body: "ReactJs, NextJs, Lit, Github, Git, NPM, MaterialUI, Bootstrap"
+        body: "HTML5, CSS3, SCSS, ReactJs, NextJs, Lit, Github, Git, NPM, MaterialUI, Bootstrap"
     },
     {
         title: "Other skills",
@@ -28,7 +28,7 @@ const workExperiences = [
         company: 'Codematic Technology',
         role: 'Software Engineer (Frontend)',
         startDate: 'JUN 2021',
-        endDate: 'Apr 2023',
+        endDate: 'Present',
         achievements: ['Implemented UI/UX designs using a mobile-first approach',
             'Built multiple user interfaces without compromising functionality for aesthetics',
             'Designed and implemented frontend applications along with third-party software integrations',
@@ -47,7 +47,13 @@ const education = [
 
 const projects = [
     {
-        title: "Pura-vida",
+        title: "Pura-vida v1 (OUTDATED)",
+        subtitle: "A Beach-house and Short-let Apartment booking website",
+        frameworks: "LIT + Typescript + SwiperJS ",
+        live: "https://www.puravidabeach.com/"
+    },
+    {
+        title: "Pura-vida v2 (CURRENT)",
         subtitle: "A Beach-house and Short-let Apartment booking website",
         frameworks: "NextJS + Typescript + SwiperJS ",
         live: "https://www.puravidabeach.com/"
@@ -59,10 +65,28 @@ const projects = [
         live: "https://parentyn.com/"
     },
     {
+        title: "NestWell Health",
+        subtitle: "Web application that provides holistic aging-in-place planning for older adults and their caregivers.",
+        frameworks: "HTML5 + CSS3 + Bootstrap",
+        live: "https://nestwell.health/"
+    },
+    {
         title: "Propel Africa",
         subtitle: "Venture platform for African talents",
         frameworks: "HTML + CSS + Javascript",
         live: "https://www.propel.africa/",
+    },
+    {
+        title: "Ferripay",
+        subtitle: "Mobile banking website",
+        frameworks: "HTML + CSS + Javascript",
+        live: "https://ferripay.web.app/",
+    },
+    {
+        title: "Portfolio",
+        subtitle: "Data Analytics Portfolio for data analyst",
+        frameworks: "Reactjs + CSS modules",
+        live: "https://mariam.vercel.app/",
     },
     {
         title: "Todo-List",
@@ -71,13 +95,13 @@ const projects = [
         live: "https://todo-llist.netlify.app/",
         code: "https://github.com/Pho-ever/FrontEnd_practices/tree/todo-list-app"
     },
-    {
-        title: "Davs University",
-        subtitle: "Simple University Landing page",
-        frameworks: "HTML + CSS + Javascript",
-        live: "https://davs-uni.netlify.app/",
-        code: "https://github.com/Pho-ever/FrontEnd_practices/tree/davs-Uni"
-    }
+    // {
+    //     title: "Davs University",
+    //     subtitle: "Simple University Landing page",
+    //     frameworks: "HTML + CSS + Javascript",
+    //     live: "https://davs-uni.netlify.app/",
+    //     code: "https://github.com/Pho-ever/FrontEnd_practices/tree/davs-Uni"
+    // }
 ]
 
 

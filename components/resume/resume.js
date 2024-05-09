@@ -54,14 +54,14 @@ export default function Resume() {
                     <div className="exp-container">
                         {constant.workExperiences.map((experience, idx) => (
                             <section className="experience" key={idx}>
-                                <p className="experince-title">
+                                <div className="experince-title">
                                     <p>
                                     {experience.company} - {experience.role}
                                     </p>
                                     <p>
                                         {experience.startDate} - {experience.endDate ? experience.endDate : 'Current'}
                                     </p>
-                                </p>
+                                </div>
                                 <article className="description">
                                     {experience.achievements.map((achievement, i) => (
                                         <div 
