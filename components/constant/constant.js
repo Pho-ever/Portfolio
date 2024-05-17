@@ -3,9 +3,9 @@ const name = 'Oluwayomi Forever';
 const profession = "Frontend Developer"
 
 
-const intro = "A Frontend Developer based in Lagos, Nigeria with passion for problem-solving, building responsive user interface using proper coding principles with a proven track record of delivering high-quality and scalable code."
+const intro = "A Frontend Developer based in Ile-ife, Osun state, Nigeria.  I have a passion for problem-solving, building responsive user interface using proper coding principles with a proven track record of delivering high-quality and scalable code."
 
-const profile_1 = "I am  reliable frontend developer with more than two years of experience in Reactjs, building browser-compatible user interfaces. I specialize in paying attention to details and building reusable components. I have a solid understanding of Agile techniques, a competitive and proactive attitude, good communication, and experience cooperating with teams made up of a diverse spectrum of individuals. Looking to contribute my skills and experience to the engineering team at"
+const profile_1 = "I am a reliable front-end developer with more than two years of internship experience in Reactjs, building browser-compatible user interfaces. Specializes in paying attention to details and building reusable components. I have a solid understanding of Agile techniques, a competitive and proactive attitude, good communication, and experience cooperating with teams made up of a diverse spectrum of individuals. I am also looking to utilize my skills and experience to build scalable and sustainable products."
 
 
 const skills = [
@@ -28,7 +28,7 @@ const workExperiences = [
         company: 'Codematic Technology',
         role: 'Software Engineer (Frontend)',
         startDate: 'JUN 2021',
-        endDate: 'Present',
+        endDate: 'SEP 2023',
         achievements: ['Implemented UI/UX designs using a mobile-first approach',
             'Built multiple user interfaces without compromising functionality for aesthetics',
             'Designed and implemented frontend applications along with third-party software integrations',
@@ -41,7 +41,7 @@ const workExperiences = [
 const education = [
     {
         school: "B.Sc Building at Obafemi Awolowo University, Ile-Ife",
-        year: "SEP 2017 - Present"
+        year: "SEP 2018 - JUL 2024"
     }
 ]
 
