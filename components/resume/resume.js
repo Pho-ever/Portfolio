@@ -10,12 +10,14 @@ export default function Resume() {
                 <div className="resume-name">
                     <h3>{constant.name}</h3>
                         <div>
-                            <Link href="https://drive.google.com/file/d/18ururDZiN8tq9kf108OkrpLu2p2K2Zh-/view?usp=drive_link">
+                            <Link href="https://drive.google.com/file/d/195ggmq46hV19pnnPqK_QjJOFfxcqSUtp/view?usp=drive_link">
+                            // <Link href="https://drive.google.com/file/d/18ururDZiN8tq9kf108OkrpLu2p2K2Zh-/view?usp=drive_link">
                                 <a target="_blank">
                                     <Image src='/download.png' width="20%" height="20%" alt="download"/>
                                 </a>
                             </Link>
-                            <Link href="https://drive.google.com/file/d/18ururDZiN8tq9kf108OkrpLu2p2K2Zh-/view?usp=drive_link">
+                            <Link href="https://drive.google.com/file/d/195ggmq46hV19pnnPqK_QjJOFfxcqSUtp/view?usp=drive_link">
+                            // <Link href="https://drive.google.com/file/d/18ururDZiN8tq9kf108OkrpLu2p2K2Zh-/view?usp=drive_link">
                                 <a target="_blank" className="download" >Download</a>
                             </Link>
                         </div>
