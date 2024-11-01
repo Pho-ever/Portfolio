@@ -3,23 +3,23 @@ const name = 'Oluwayomi Forever';
 const profession = "Frontend Developer"
 
 
-const intro = "A Frontend Developer based in Ile-ife, Osun state, Nigeria.  I have a passion for problem-solving, building responsive user interface using proper coding principles with a proven track record of delivering high-quality and scalable code."
+const intro = "I am a Frontend Developer and Cloud Engineer specializing in Google Cloud Platform (GCP). I create responsive user interfaces while following best coding practices and design, deploy, and manage cloud solutions using GCP services. My expertise includes optimizing cloud infrastructure and ensuring seamless application integration, allowing me to build scalable and high-quality user experiences."
 
-const profile_1 = "I am a reliable front-end developer with more than two years of internship experience in Reactjs, building browser-compatible user interfaces. Specializes in paying attention to details and building reusable components. I have a solid understanding of Agile techniques, a competitive and proactive attitude, good communication, and experience cooperating with teams made up of a diverse spectrum of individuals. I am also looking to utilize my skills and experience to build scalable and sustainable products."
+const profile_1 = "I am a Frontend Developer and Cloud Engineer specializing in Google Cloud Platform (GCP). I create responsive user interfaces while adhering to best coding practices. In my cloud engineering role, I design, deploy, and manage cloud-based solutions that leverage GCP's powerful services. I focus on optimizing cloud infrastructure for performance and cost-efficiency, implementing security best practices. I work with technologies such as Google Cloud Storage, Google Cloud Run, and Google Kubernetes Engine, allowing me to build scalable and resilient applications in the cloud while delivering high-quality user experiences."
 
 
 const skills = [
     {
         title: 'Languages',
-        body: "HTML, CSS, JavaScript, Typescript"
+        body: "HTML, CSS, JavaScript, Typescript, Python, SQL, R"
     },
     {
         title: "Technologies",
-        body: "HTML5, CSS3, SCSS, ReactJs, NextJs, Lit, Github, Git, NPM, MaterialUI, Bootstrap"
+        body: "HTML5, CSS3, SCSS, ReactJs, NextJs, Lit, Github, Git, NPM, MaterialUI, TailwindCSS, ReactQuery, Google Cloud Platform"
     },
     {
         title: "Other skills",
-        body: "API Integration, Responsive design, cross browser compatibility, command line, Optimization"
+        body: "API Integration, Cloud-run, Cloud Storage, Responsive design, Cloud-Build, Cross browser compatibility,"
     },
 ]
 
@@ -28,12 +28,13 @@ const workExperiences = [
         company: 'Codematic Technology',
         role: 'Software Engineer (Frontend)',
         startDate: 'JUN 2021',
-        endDate: 'SEP 2023',
-        achievements: ['Implemented UI/UX designs using a mobile-first approach',
-            'Built multiple user interfaces without compromising functionality for aesthetics',
-            'Designed and implemented frontend applications along with third-party software integrations',
-            'Maintained graphic standards and branding interface throughout the interface of products.',
-            'Collaborated with four other developers to build and deploy new-user facing features.'
+        endDate: 'Present',
+        achievements: ['Built high-performance single-page application using NextJS and React, reducing load times by 30%',
+            'Implemented responsive and accessible design, ensuring compatibility across multiple devices and browsers, boosting user engagement by 25%',
+            'Collaborated with designers and back-end developers to integrate front-end components into the overall application architecture',
+            'Contributed to the development of a customer dashboard, providing real-time analytics and data visualization',
+            'Utilized TypeScript for type-safe and scalable web application development.',
+            'Developed modular and reusable UI components using React.js and styled-components'
         ],
     }
 ]
@@ -41,7 +42,7 @@ const workExperiences = [
 const education = [
     {
         school: "B.Sc Building at Obafemi Awolowo University, Ile-Ife",
-        year: "SEP 2018 - JUL 2024"
+        year: "SEP 2018 - AUG 2024"
     }
 ]
 
@@ -94,14 +95,18 @@ const projects = [
         frameworks: "HTML + CSS + Javascript",
         live: "https://todo-llist.netlify.app/",
         code: "https://github.com/Pho-ever/FrontEnd_practices/tree/todo-list-app"
+    }
+]
+
+const certification = [
+    {
+        title: 'ASSOCIATE CLOUD ENGINEER (Google Cloud)',
+        body: " "
     },
-    // {
-    //     title: "Davs University",
-    //     subtitle: "Simple University Landing page",
-    //     frameworks: "HTML + CSS + Javascript",
-    //     live: "https://davs-uni.netlify.app/",
-    //     code: "https://github.com/Pho-ever/FrontEnd_practices/tree/davs-Uni"
-    // }
+    {
+        title: 'PROFESSIONAL CLOUD ARCHITECT (Google Cloud)',
+        body: ""
+    },
 ]
 
 
@@ -116,6 +121,5 @@ export const constant = {
     workExperiences,
     education,
     projects,
-    // languages,
-    // hobbies,
+    certification
 };
