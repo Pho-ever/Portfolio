@@ -3,23 +3,23 @@ const name = 'Oluwayomi Forever';
 const profession = "Frontend Developer"
 
 
-const intro = "I am a Frontend Developer and Cloud Engineer specializing in Google Cloud Platform (GCP). I create responsive user interfaces while following best coding practices and design, deploy, and manage cloud solutions using GCP services. My expertise includes optimizing cloud infrastructure and ensuring seamless application integration, allowing me to build scalable and high-quality user experiences."
+const intro = "I am a Frontend Developer and Cloud Engineer specializing in Google Cloud Platform (GCP). I create responsive user interfaces while following best coding practices and design, deploy, and manage cloud solutions using GCP services. I develop high-performance, scalable, and user-friendly applications that foster business growth. With over 3 years of experience converting Figma designs to fully functional website, I focus on crafting seamless user experiences utilizing technologies such as HTML, CSS, React.js and Next.js"
 
-const profile_1 = "I am a Frontend Developer and Cloud Engineer specializing in Google Cloud Platform (GCP). I create responsive user interfaces while adhering to best coding practices. In my cloud engineering role, I design, deploy, and manage cloud-based solutions that leverage GCP's powerful services. I focus on optimizing cloud infrastructure for performance and cost-efficiency, implementing security best practices. I work with technologies such as Google Cloud Storage, Google Cloud Run, and Google Kubernetes Engine, allowing me to build scalable and resilient applications in the cloud while delivering high-quality user experiences."
+const profile_1 = "Committed and detail-oriented Frontend Developer with experience crafting responsive, high-performance web applications. Proficient in modern web technologies, including React.js, and Next.js, with a strong focus on user experience and accessibility. Adept at collaborating with cross-functional teams to develop visually appealing and functional interfaces that enhance user engagement. Skilled in responsive design, performance optimization, and state management with tools like Redux and React-Query."
 
 
 const skills = [
     {
         title: 'Languages',
-        body: "HTML, CSS, JavaScript, Typescript, Python, SQL, R"
+        body: "HTML, CSS, JavaScript, Typescript"
     },
     {
         title: "Technologies",
-        body: "HTML5, CSS3, SCSS, ReactJs, NextJs, Lit, Github, Git, NPM, MaterialUI, TailwindCSS, ReactQuery, Google Cloud Platform"
+        body: "ReactJs, NextJs, Lit, Github, Git, NPM, MaterialUI, TailwindCSS, ReactQuery, Google Cloud Platform"
     },
     {
         title: "Other skills",
-        body: "API Integration, Cloud-run, Cloud Storage, Responsive design, Cloud-Build, Cross browser compatibility,"
+        body: "API Integration, Cloud-run, Cloud Storage, Responsive design, Cloud-Build, Cross browser compatibility"
     },
 ]
 
@@ -42,21 +42,15 @@ const workExperiences = [
 const education = [
     {
         school: "B.Sc Building at Obafemi Awolowo University, Ile-Ife",
-        year: "SEP 2018 - AUG 2024"
+        // year: "SEP 2018 - AUG 2024"
     }
 ]
 
 const projects = [
     {
-        title: "Pura-vida v1 (OUTDATED)",
+        title: "Pura Vida Beach",
         subtitle: "A Beach-house and Short-let Apartment booking website",
-        frameworks: "LIT + Typescript + SwiperJS ",
-        live: "https://www.puravidabeach.com/"
-    },
-    {
-        title: "Pura-vida v2 (CURRENT)",
-        subtitle: "A Beach-house and Short-let Apartment booking website",
-        frameworks: "NextJS + Typescript + SwiperJS ",
+        frameworks: "NextJS + Redux-toolkit + Typescript + SwiperJS ",
         live: "https://www.puravidabeach.com/"
     },
     {
@@ -74,7 +68,7 @@ const projects = [
     {
         title: "Propel Africa",
         subtitle: "Venture platform for African talents",
-        frameworks: "HTML + CSS + Javascript",
+        frameworks: "NextJS + Redux-toolkit + Typescript",
         live: "https://www.propel.africa/",
     },
     {
@@ -84,18 +78,11 @@ const projects = [
         live: "https://ferripay.web.app/",
     },
     {
-        title: "Portfolio",
+        title: "Data Analytics portfolio",
         subtitle: "Data Analytics Portfolio for data analyst",
-        frameworks: "Reactjs + CSS modules",
+        frameworks: "React.js + CSS modules",
         live: "https://mariam.vercel.app/",
     },
-    {
-        title: "Todo-List",
-        subtitle: "Simple Todo List App",
-        frameworks: "HTML + CSS + Javascript",
-        live: "https://todo-llist.netlify.app/",
-        code: "https://github.com/Pho-ever/FrontEnd_practices/tree/todo-list-app"
-    }
 ]
 
 const certification = [

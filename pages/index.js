@@ -28,11 +28,10 @@ export default function Home() {
     <>
       <div className="landing-container">
         <div className="header-wrapper">
-            {/* <Image src="/../public/icons/logo.png" width="40" height="130" alt="logo"/> */}
             <button 
             className={menu ? "menu-btn-active" : "menu-btn"}
-            onClick={handleHamburger}
-            >
+            onClick={handleHamburger}>
+              
               <div className="btn-line-1"></div>
               <div className="btn-line-2"></div>
             </button>
