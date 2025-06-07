@@ -3,7 +3,7 @@ const name = 'Oluwayomi Forever';
 const profession = "Frontend Developer"
 
 
-const intro = "I am a Frontend Developer and Cloud Engineer specializing in Google Cloud Platform (GCP). I create responsive user interfaces while following best coding practices and design, deploy, and manage cloud solutions using GCP services. I develop high-performance, scalable, and user-friendly applications that foster business growth. With over 3 years of experience converting Figma designs to fully functional website, I focus on crafting seamless user experiences utilizing technologies such as HTML, CSS, React.js and Next.js"
+const intro = "I’m a Frontend Developer with a strong focus on building responsive, user-friendly interfaces using technologies like HTML, CSS, React.js, and Next.js. With over 3 years of experience transforming Figma designs into fully functional websites, I prioritize seamless user experiences and clean, maintainable code. In addition to frontend development, I’m also a Cloud Engineer specializing in Google Cloud Platform (GCP). I design, deploy, and manage scalable cloud solutions that support high-performance applications and long-term business growth."
 
 const profile_1 = "Committed and detail-oriented Frontend Developer with experience crafting responsive, high-performance web applications. Proficient in modern web technologies, including React.js, and Next.js, with a strong focus on user experience and accessibility. Adept at collaborating with cross-functional teams to develop visually appealing and functional interfaces that enhance user engagement. Skilled in responsive design, performance optimization, and state management with tools like Redux and React-Query."
 
@@ -78,6 +78,12 @@ const projects = [
         live: "https://ferripay.web.app/",
     },
     {
+        title: "Codematic Workspace",
+        subtitle: "Workspace website",
+        frameworks: "HTML + TailwindCSS + Javascript",
+        live: "https://codematic-workspace.web.app/",
+    },
+    {
         title: "Data Analytics portfolio",
         subtitle: "Data Analytics Portfolio for data analyst",
         frameworks: "React.js + CSS modules",
@@ -88,7 +94,7 @@ const projects = [
 const certification = [
     {
         title: 'ASSOCIATE CLOUD ENGINEER (Google Cloud)',
-        body: " "
+        body: ""
     },
     {
         title: 'PROFESSIONAL CLOUD ARCHITECT (Google Cloud)',
