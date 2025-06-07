@@ -42,7 +42,6 @@ const workExperiences = [
 const education = [
     {
         school: "B.Sc Building at Obafemi Awolowo University, Ile-Ife",
-        // year: "SEP 2018 - AUG 2024"
     }
 ]
 
